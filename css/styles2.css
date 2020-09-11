@@ -1,0 +1,106 @@
+/* ----------------- */
+/*	 Global Tags	 */
+/* ----------------- */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	color: #3046c5;
+}
+
+header h2 {
+	color: #cec8ff;
+}
+
+footer {
+	background-image: linear-gradient(#cec8ff, white);
+	padding: 20px 0;
+}
+
+/* ----------------- */
+/* Bootstrap Classes */
+/* ----------------- */
+
+/* JUMBO */
+.jumbotron {
+	padding: 30px;
+	background-image: url('/img/bg-tents.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	color: white;
+	margin: 0;
+}
+
+/* NAVBAR */
+.nav-link {
+	/* color: purple; */
+	font-size: 1.15rem;
+	letter-spacing: 0.2rem;
+}
+
+.nav-item .active {
+	border-bottom: solid 2px #0096db;
+}
+
+.navbar-default {
+	transition: 500ms ease;
+	background: transparent;
+}
+.navbar-default.scrolled {
+	background: #000 !important;
+}
+
+/* TABS */
+/* .tab-content {
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 10px;
+} */
+
+/* Carousel */
+.carousel {
+	border: solid #5637dd;
+}
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------- */
+/* 	Local Classes	 */
+/* ----------------- */
+
+.row-content {
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+.text-brand-blue {
+	color: #0096db !important;
+}
+
+.bg-brand-blue {
+	background-color: #0096db !important;
+}
+
+.text-brand-purple {
+	color: #a83da3 !important;
+}
+
+.bg-brand-purple {
+	background-color: #a83da3 !important;
+}
