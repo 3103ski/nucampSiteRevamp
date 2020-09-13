@@ -1,3 +1,6 @@
+/* ----------------- */
+/*  LOCAL VARIABLES  */
+/* ----------------- */
 /* -------------- */
 /*	 Global Tags  */
 /* -------------- */
@@ -15,6 +18,10 @@ h2 {
   color: #3046c5;
 }
 
+p {
+  letter-spacing: 0.05rem;
+}
+
 header h2 {
   color: #cec8ff;
 }
@@ -24,9 +31,6 @@ footer {
   height: 300px;
 }
 
-/* ----------------- */
-/*  LOCAL VARIABLES  */
-/* ----------------- */
 /* ------------------- */
 /* Bootstrap Overrides */
 /* ------------------- */
@@ -59,7 +63,6 @@ footer {
 
 /* NAVBAR */
 .nav-link {
-  /* color: purple; */
   font-size: 1.15rem;
   letter-spacing: 0.2rem;
 }
@@ -125,6 +128,15 @@ footer {
 
 .border-primary {
   border-color: #302d2d !important;
+}
+
+.text-review-name {
+  font-size: 0.75rem;
+  color: #302d2d;
+}
+
+.rating i {
+  color: #f4d039;
 }
 
 .contact-card a {

@@ -142,10 +142,87 @@
 				<div class="col-12 col-md-5 mx-auto p-0 mt-3 mt-sm-0">
 					<div class="media">
 						<div class="media-body align-self-center p-3 text-sm-right">
-							<h1 class="text-sm-right text-brand-blue">Discover & Review</h1>
-							<h3>Our Campsites</h3>
+							<h1 class="text-sm-right text-brand-purple">Discover & Review</h1>
+							<h3 class="text-brand-blue">Our Campsites</h3>
 							<p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-							<a href="/aboutus.html#commPartners" class="btn btn-block bg-brand-blue text-white py-2 mt-4 mt-sm-0">SEE REVIEWS</a>
+							<button class="btn btn-block bg-brand-blue text-white py-2 mt-4 mt-sm-4" data-toggle="modal" data-target="#reviewModal">SEE REVIEWS</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Reviews Modal -->
+			<div class="modal fade" id="reviewModal">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header text-white bg-brand-purple">
+							<h1 class="ml-4">Reviews</h1>
+							<button class="close text-white" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
+						</div>
+						<div class="modal-content border-0 p-4">
+							<!-- review placeholder 1 -->
+							<div class="row justify-content-center mb-3">
+								<div class="col-2 d-flex">
+									<img src="img/placeholder-user-1.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								</div>
+								<div class="col-8">
+									<h2 class="mb-0">Such a good time!</h2>
+									<p class="text-review-name pl-3 m-0">Maria Garcia</p>
+									<div class="d-flex pl-3 mt-1 mb-3 rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora quia, vel consectetur pariatur a illo nihil maiores consequatur, modi mollitia nobis eos voluptates. Quam,
+										rem pariatur. Totam, obcaecati quisquam.
+									</p>
+								</div>
+							</div>
+							<!-- review placeholder 2 -->
+							<div class="row justify-content-center mb-3">
+								<div class="col-2 d-flex">
+									<img src="img/placeholder-user-2.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								</div>
+								<div class="col-8">
+									<h2 class="mb-0">Clean sites and helpful rangers :)</h2>
+									<p class="text-review-name pl-3 m-0">Josh Wright</p>
+									<div class="d-flex pl-3 mt-1 mb-3 rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora quia, vel consectetur pariatur a illo nihil maiores consequatur, modi mollitia nobis eos voluptates. Quam,
+										rem pariatur. Totam, obcaecati quisquam.
+									</p>
+								</div>
+							</div>
+							<!-- review placeholder 3 -->
+							<div class="row justify-content-center mb-3">
+								<div class="col-2 d-flex">
+									<img src="img/placeholder-user-3.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								</div>
+								<div class="col-8">
+									<h2 class="mb-0">Better weather next time</h2>
+									<p class="text-review-name pl-3 m-0">Alissa Scott</p>
+									<div class="d-flex pl-3 mt-1 mb-3 rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora quia, vel consectetur pariatur a illo nihil maiores consequatur, modi mollitia nobis eos voluptates. Quam,
+										rem pariatur. Totam, obcaecati quisquam.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -153,16 +230,20 @@
 
 			<!-- CONTENT-ROW 2 - Featured Campsites Row -->
 			<div class="row row-content align-items-center">
-				<div class="col-12 col-sm-10 mx-auto">
+				<div class="col-12 col-md-5 mx-auto p-0 mt-3 mt-sm-0 order-1 order-md-0">
 					<div class="media">
-						<div class="media-body align-self-center p-3">
-							<h1 class="text-brand-blue">Featured Campsites</h1>
-							<h3>React Lake Campground</h3>
+						<div class="media-body align-self-center p-3 text-sm-left">
+							<h1 class="text-sm-left text-brand-purple">Featured Campsites</h1>
+							<h3 class="text-brand-blue">React Lake Campground</h3>
 							<p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-							<a href="#" class="btn btn-block bg-brand-blue text-white shadow-sm">LEARN MORE</a>
+							<a href="/aboutus.html#commPartners" class="btn btn-block bg-brand-blue text-white py-2 mt-4 mt-sm-4">LEARN MORE</a>
 						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-5 mx-auto p-0">
+					<div class="media">
 						<div class="media-body align-self-center m-2">
-							<img class="d-flex ml-3 img-fluid rounded" src="img/react-lake.jpg" alt="" />
+							<img src="img/react-lake.jpg" alt="React Lake" class="d-flex mr-3 img-fluid rounded" />
 						</div>
 					</div>
 				</div>
@@ -213,14 +294,14 @@
 		<div class="container">
 			<!-- CONTENT-ROW 3 - Our Community Partners Row -->
 			<div class="row row-content align-items-center border-bottom border-primary">
-				<!-- <div class="col-sm-4 order-sm-last col-md-3"></div> -->
-				<div class="col">
+				<div class="col col-md-7 mx-auto">
 					<div class="media justify-content-center">
 						<img src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" class="d-flex mr-3 img-thumbnail" />
 						<div class="img-body align-self-center text-sm-right">
-							<h2 class="">Our Community Partners</h2>
-							<h3>Bootstrap Outfitters</h3>
+							<h2 class="text-brand-purple">Our Community Partners</h2>
+							<h3 class="text-brand-blue">Bootstrap Outfitters</h3>
 							<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+							<a href="aboutus.html#commPartners" class="btn btn bg-brand-blue text-white px-4 py-2">See Partners</a>
 						</div>
 					</div>
 				</div>

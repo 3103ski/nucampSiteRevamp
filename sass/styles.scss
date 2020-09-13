@@ -1,3 +1,16 @@
+/* ----------------- */
+/*  LOCAL VARIABLES  */
+/* ----------------- */
+
+// colors
+$brand-blue: #0096db;
+$brand-purple: #a83da3;
+$brand-grey: #302d2d;
+$rating-star-color: rgb(244, 208, 57);
+
+// sizing
+$jumbotron-height: 75vh;
+
 /* -------------- */
 /*	 Global Tags  */
 /* -------------- */
@@ -15,6 +28,9 @@ h3 {
 h2 {
 	color: #3046c5;
 }
+p {
+	letter-spacing: 0.05rem;
+}
 
 header h2 {
 	color: #cec8ff;
@@ -24,18 +40,6 @@ footer {
 	padding: 20px 0;
 	height: 300px;
 }
-
-/* ----------------- */
-/*  LOCAL VARIABLES  */
-/* ----------------- */
-
-// colors
-$brand-blue: #0096db;
-$brand-purple: #a83da3;
-$brand-grey: #302d2d;
-
-// sizing
-$jumbotron-height: 75vh;
 
 /* ------------------- */
 /* Bootstrap Overrides */
@@ -74,7 +78,6 @@ $jumbotron-height: 75vh;
 /* NAVBAR */
 
 .nav-link {
-	/* color: purple; */
 	font-size: 1.15rem;
 	letter-spacing: 0.2rem;
 }
@@ -148,9 +151,15 @@ $jumbotron-height: 75vh;
 	border-color: $brand-grey !important;
 }
 
-// ICONS
+// REVIEWS
+.text-review-name {
+	font-size: 0.75rem;
+	color: $brand-grey;
+}
 
-// Contact Page
+.rating i {
+	color: $rating-star-color;
+}
 
 .contact-card a {
 	width: 100%;
