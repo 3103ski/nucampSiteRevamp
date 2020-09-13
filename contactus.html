@@ -7,10 +7,10 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 		<!-- Additional CSS  -->
 		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+		<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+
 		<!-- Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 		<!-- Custom Stylesheets -->
@@ -20,60 +20,50 @@
 	</head>
 
 	<body>
-		<!-- ------------------- -->
-		<!-- MAIN HEADER SECTION -->
-		<!-- ------------------- -->
+		<!-- ----------------- -->
+		<!--  NAVIGATION MENU  -->
+		<!-- ----------------- -->
 
-		<!-- JUMBOTRON -->
-		<header class="jumbotron jumbotron-fluid">
+		<nav class="navbar navbar-expand-sm fixed-top navbar-default">
 			<div class="container">
-				<div class="row">
-					<div class="col-4 col-sm-3 col-md-2">
-						<a href="index.html"><img src="img/logo.png" alt="logo" class="img-fluid" /></a>
-					</div>
-					<div class="col">
-						<h1>NuCamp</h1>
-						<h2>a better way to camp</h2>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<!-- NAVIGATION -->
-		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-			<div class="container">
-				<a href="index.html" class="navbar-brand"><img src="img/logo.png" height="30px" width="30px" alt="logo" /></a>
+				<a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="logo" height="40px" width="40px" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="nucampNavbar">
-					<ul class="navbar-nav">
+					<ul class="navbar-nav p-sm-2">
 						<li class="nav-item">
-							<a href="index.html" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
+							<a href="index.html" class="nav-link ml-sm-2 text-brand-purple"> HOME</a>
 						</li>
 						<li class="nav-item">
-							<a href="aboutus.html" class="nav-link active"><i class="fa fa-info fa-lg"></i> About</a>
+							<a href="aboutus.html" class="nav-link ml-sm-2 text-brand-purple"> ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link"><i class="fa fa-list fa-lg"></i> Sites</a>
+							<a href="#" class="nav-link ml-sm-2 text-brand-purple"> SITES</a>
 						</li>
-						<li class="nav-item">
-							<a href="contactus.html" class="nav-link"><i class="fa fa-address-card fa-lg"></i> Contact</a>
+						<li class="nav-item ml-sm-2">
+							<a href="contactus.html" class="nav-link text-brand-purple active"> CONTACT</a>
 						</li>
 					</ul>
 					<span class="navbar-text ml-auto">
-						<a role="button" data-toggle="modal" data-target="#loginModal"> <i class="fa fa-sign-in"></i> Login </a>
+						<a role="button" data-toggle="modal" data-target="#loginModal" class="nav-link text-brand-purple">
+							<i class="fa fa-sign-in-alt"></i>
+							LOGIN
+						</a>
 					</span>
 				</div>
 			</div>
 		</nav>
 
+		<!-- ------------- -->
+		<!--  LOGIN MODAL  -->
+		<!-- ------------- -->
 		<div class="modal fade" id="loginModal" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h3 class="modal-title">Login</h3>
-						<button class="close" type="button" data-dismiss="modal">&times;</button>
+						<button class="close" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
 					</div>
 					<div class="modal-body">
 						<div class="container-fluid">
@@ -105,85 +95,72 @@
 			</div>
 		</div>
 
+		<!-- ------------- -->
+		<!--   JUMBOTRON   -->
+		<!-- ------------- -->
+		<header class="jumbotron jumbotron-fluid half-jumbotron align-items-center d-flex">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row pt-5">
+					<div class="col-2 d-flex">
+						<a href="index.html" class="ml-auto"><img src="img/logo.png" alt="logo" class="img-fluid" /></a>
+					</div>
+					<div class="col d-flex align-items-center">
+						<h1 class="text-brand-blue">Contact Us</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
 		<!-- -------------- -->
 		<!-- MAIN CONTAINER -->
 		<!-- -------------- -->
 		<div class="container">
-			<!-- BREADCRUMBS -->
+			<!-- Breadcrumbs -->
 			<div class="row">
 				<div class="col">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item active">About</li>
+					<ol class="breadcrumb bg-transparent m-0">
+						<li class="breadcrumb-item"><a class="text-brand-blue" href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Contact</li>
 					</ol>
-					<h2>About Us</h2>
-					<hr />
+					<hr class="m-0" />
 				</div>
 			</div>
 
-			<!-- OUR MISSION -->
-			<div class="row row-content">
-				<div class="col col-sm-6">
-					<h3>Our Mission</h3>
-					<p>
-						We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe
-						and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for
-						campers to share reviews on campsites they have visited with each other.
-					</p>
+			<!-- Contact Info -->
+			<div class="row row-content py-5 align-items-start">
+				<div class="col-10 col-sm-5 mx-auto mr-md-0">
+					<div class="card">
+						<div class="card-header bg-brand-purple text-white">
+							<h5 class="my-1">Come Visit Us</h5>
+						</div>
+						<div class="card-body">
+							<address>
+								1 Nucamp Way<br />
+								Seattle, WA 98001<br />
+								U.S.A.
+							</address>
+						</div>
+					</div>
 				</div>
-			</div>
-
-			<!-- COMMUNITY PARTNERS TABS -->
-			<div class="row row-content">
-				<div class="col">
-					<h3>Community Partners</h3>
-
-					<div id="accordion">
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h4>
-									<a data-toggle="collapse" data-target="#bootstrap">Bootstrap Outfitters <small>Outdoor Gear Specialists</small></a>
-								</h4>
-								<div class="collapse show" id="bootstrap" data-parent="#accordion">
-									<div class="card-body">
-										<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
-									</div>
+				<div class="col-10 col-sm-5 mx-auto mr-ml-0 mt-3 mt-sm-0">
+					<div class="card">
+						<div class="card-header bg-brand-purple text-white"><h5 class="my-1">Or Drop A Line</h5></div>
+						<div class="card-body contact-card">
+							<div class="row justify-content-center">
+								<div class="col-10 col-md-2 justify-content-center d-flex">
+									<a role="button" class="btn btn-link text-brand-blue" href="tel:+1206551234"><i class="fa fa-phone text-brand-blue"></i></a>
+								</div>
+								<div class="col-12 col-md-8 align-self-center">
+									<a role="button" class="btn btn-link text-brand-blue" href="tel:+1206551234">1-206-555-1234</a>
 								</div>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h4>
-									<a class="collapsed" data-toggle="collapse" data-target="#git">Git Out Expeditions <small>Group Adventure Expeditions</small></a>
-								</h4>
-								<div class="collapse" id="git" data-parent="#accordion">
-									<div class="card-body">
-										<p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
-									</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-md-2 justify-content-center d-flex">
+									<a role="button" class="btn btn-link text-brand-blue" href="mailto:campsite@nucamp.co"><i class="fa fa-envelope-open-text text-brand-blue"></i></a>
 								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h4>
-									<a class="collapsed" data-toggle="collapse" data-target="#mongo">Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></a>
-								</h4>
-								<div class="collapse" id="mongo" data-parent="#accordion">
-									<div class="card-body">
-										<p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h4>
-									<a class="collapsed" data-toggle="collapse" data-target="#node">Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></a>
-								</h4>
-								<div class="collapse" id="node" data-parent="#accordion">
-									<div class="card-body">
-										<p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
-									</div>
+								<div class="col-12 col-md-8 align-self-center">
+									<a role="button" class="btn btn-link text-brand-blue text-wrap" href="mailto:campsite@nucamp.co">campsites@nucamp.co</a>
 								</div>
 							</div>
 						</div>
@@ -191,32 +168,98 @@
 				</div>
 			</div>
 
-			<!-- END OF MAIN CONTAINER -->
+			<!-- Feedback -->
+			<div class="row row-content pt-0 pb-5">
+				<div class="col-12">
+					<h2 class="text-brand-purple">Send us your Feedback</h2>
+					<hr />
+				</div>
+				<div class="col-md-10 mx-auto">
+					<form>
+						<div class="form-group row">
+							<label for="firstName" class="col-md-2 col-form-label">First Name</label>
+							<div class="col-md-10">
+								<input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name" />
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label" for="lastName">Last Name</label>
+							<div class="col-md-10">
+								<input class="form-control" type="text" id="lastName" name="lastName" placeholder="Last Name" />
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label" for="areaCode">Tel.</label>
+							<div class="col-5 col-md-3">
+								<input class="form-control" type="tel" id="areaCode" name="zipCode" placeholder="Area Code" />
+							</div>
+							<div class="col-7">
+								<input class="form-control" type="tel" id="telNum" name="telNum" placeholder="Tel. Num" />
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label" for="email">Email</label>
+							<div class="col-md-10">
+								<input class="form-control" type="email" id="email" name="email" placeholder="Email" />
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col offset-md-2">
+								May we contact you?
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" id="contactYes" name="contactRadios" value="yes" /><label class="form-check-label" for="contactYes">Yes</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" id="contactNo" name="contactRadios" value="no" /><label class="form-check-label" for="contactNo">No</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label" for="yourFeedback">Your Feedback</label>
+							<div class="col-md-10">
+								<textarea class="form-control" name="feedback" id="yourFeedback" cols="30" rows="8"></textarea>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-md-10 offset-md-2">
+								<button class="btn bg-brand-blue text-white btn-block" type="submit">Send Feedback</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 
 		<!-- -------- -->
 		<!--  FOOTER  -->
 		<!-- -------- -->
-		<footer>
+		<footer class="bg-brand-purple d-flex align-items-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-4 col-sm-2 offset-1">
-						<h5>Links</h5>
+						<h3 class="text-white">Links</h3>
 						<ul class="list-unstyled">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aboutus.html">About</a></li>
-							<li><a href="#">Sites</a></li>
-							<li><a href="contactus.html">Contact</a></li>
+							<li><a class="text-brand-blue" href="#">Home</a></li>
+							<li><a class="text-brand-blue" href="aboutus.html">About</a></li>
+							<li><a class="text-brand-blue" href="#">Sites</a></li>
+							<li><a class="text-brand-blue" href="contactus.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-6 col-sm-5 text-center">
-						<h5>Social</h5>
-						<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-						<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-						<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+						<h3 class="text-white">Social</h3>
+						<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-instagram"></i></a>
+						<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-facebook"></i></a>
+						<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-twitter"></i></a>
+						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-youtube"></i></a>
 					</div>
 					<div class="col-sm-4 text-center">
+						<h3 class="text-white">Reach Out</h3>
 						<a role="button" href="tel:2065551234" class="btn btn-link"><i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a><br />
 						<a role="button" href="mailto:campsites@nucamp.co" class="btn btn-link"><i class="fa fa-envelope-o fa-lg text-primary"></i> campsites@nucamp.co</a>
 					</div>
@@ -228,5 +271,6 @@
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/customJS.js"></script>
 	</body>
 </html>

@@ -1,106 +1,159 @@
-/* ----------------- */
-/*	 Global Tags	 */
-/* ----------------- */
-
+/* -------------- */
+/*	 Global Tags  */
+/* -------------- */
 body {
-	font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-	font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 h2 {
-	color: #3046c5;
+  color: #3046c5;
 }
 
 header h2 {
-	color: #cec8ff;
+  color: #cec8ff;
 }
 
 footer {
-	background-image: linear-gradient(#cec8ff, white);
-	padding: 20px 0;
+  padding: 20px 0;
+  height: 300px;
 }
 
 /* ----------------- */
-/* Bootstrap Classes */
+/*  LOCAL VARIABLES  */
 /* ----------------- */
-
-/* JUMBO */
+/* ------------------- */
+/* Bootstrap Overrides */
+/* ------------------- */
+/* JUMBOTRON */
 .jumbotron {
-	padding: 30px;
-	background-image: url('/img/bg-tents.jpg');
-	background-size: cover;
-	background-position: center;
-	height: 60vh;
-	color: white;
-	margin: 0;
+  padding: 30px;
+  position: relative;
+  background-image: url("/img/bg-tents.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  min-height: 500px;
+  color: white;
+  margin: 0;
+}
+
+.jumbotron .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(218, 218, 218, 0.496);
+  left: 0;
+  top: 0;
+}
+
+.half-jumbotron {
+  height: 25vh;
+  min-height: 250px;
 }
 
 /* NAVBAR */
 .nav-link {
-	/* color: purple; */
-	font-size: 1.15rem;
-	letter-spacing: 0.2rem;
+  /* color: purple; */
+  font-size: 1.15rem;
+  letter-spacing: 0.2rem;
 }
 
 .nav-item .active {
-	border-bottom: solid 2px #0096db;
+  border-bottom: solid 2px #0096db;
 }
 
 .navbar-default {
-	transition: 500ms ease;
-	background: transparent;
-}
-.navbar-default.scrolled {
-	background: #000 !important;
+  transition: 500ms ease;
+  background: transparent;
 }
 
-/* TABS */
-/* .tab-content {
-	border: 1px solid #ddd;
-	border-top: none;
-	padding: 10px;
-} */
+.navbar-default.scrolled {
+  background: #302d2d;
+}
 
 /* Carousel */
-.carousel {
-	border: solid #5637dd;
+.carousel,
+.carousel-inner,
+.carousel-item {
+  min-height: 380px;
+  height: 50vh;
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-caption {
-	background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-breadcrumb {
+  background-image: url("/img/bg-campsite.jpg");
+}
+
+.bg-react-lake {
+  background-image: url("/img/bg-lake.jpg");
+}
+
+.bg-chrome-river {
+  background-image: url("/img/bg-river.jpg");
+}
+
+/* btn */
+.btn {
+  letter-spacing: 0.1rem;
 }
 
 /* ----------------- */
 /* 	Local Classes	 */
 /* ----------------- */
-
 .row-content {
-	padding: 50px 0;
-	border-bottom: 1px ridge;
-	min-height: 200px;
+  padding: 100px 0;
+  min-height: 200px;
+}
+
+.row-half-pad {
+  padding: 50px 0;
+}
+
+.border-primary {
+  border-color: #302d2d !important;
+}
+
+.contact-card a {
+  width: 100%;
+}
+.contact-card a .fa-phone,
+.contact-card a .fa-envelope-open-text {
+  border: solid 2px #0096db;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 /* --------------- */
 /* Utility Classes */
 /* --------------- */
-
 .text-brand-blue {
-	color: #0096db !important;
+  color: #0096db !important;
 }
 
 .bg-brand-blue {
-	background-color: #0096db !important;
+  background-color: #0096db !important;
 }
 
 .text-brand-purple {
-	color: #a83da3 !important;
+  color: #a83da3 !important;
 }
 
 .bg-brand-purple {
-	background-color: #a83da3 !important;
+  background-color: #a83da3 !important;
 }
+
+/*# sourceMappingURL=styles.css.map */

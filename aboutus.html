@@ -7,60 +7,46 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 		<!-- Additional CSS  -->
 		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+		<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
 		<!-- Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 		<!-- Custom Stylesheets -->
-		<link rel="stylesheet" href="css/styles2.css" />
+		<link rel="stylesheet" href="css/styles.css" />
 
 		<title>NuCamp: A Better Way To Camp</title>
 	</head>
 
 	<body>
-		<!-- ------------------- -->
-		<!-- MAIN HEADER SECTION -->
-		<!-- ------------------- -->
+		<!-- ----------------- -->
+		<!--  NAVIGATION MENU  -->
+		<!-- ----------------- -->
 
-		<!-- NAVIGATION -->
 		<nav class="navbar navbar-expand-sm fixed-top navbar-default">
 			<div class="container">
-				<a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" height="40px" width="40px" /></a>
+				<a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="logo" height="40px" width="40px" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="nucampNavbar">
 					<ul class="navbar-nav p-sm-2">
 						<li class="nav-item">
-							<a href="//index.html" class="nav-link ml-sm-2 text-brand-purple">
-								<!-- <i class="fa fa-home fa-lg"></i>  -->
-								HOME</a
-							>
+							<a href="index.html" class="nav-link ml-sm-2 text-brand-purple"> HOME</a>
 						</li>
 						<li class="nav-item">
-							<a href="/aboutus.html" class="nav-link ml-sm-2 text-brand-purple active">
-								<!-- <i class="fa fa-info fa-lg"></i>  -->
-								ABOUT</a
-							>
+							<a href="aboutus.html" class="nav-link ml-sm-2 text-brand-purple active"> ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link ml-sm-2 text-brand-purple">
-								<!-- <i class="fa fa-list fa-lg"></i>  -->
-								SITES</a
-							>
+							<a href="#" class="nav-link ml-sm-2 text-brand-purple"> SITES</a>
 						</li>
 						<li class="nav-item ml-sm-2">
-							<a href="contactus.html" class="nav-link text-brand-purple">
-								<!-- <i class="fa fa-address-card fa-lg"></i>  -->
-								CONTACT</a
-							>
+							<a href="contactus.html" class="nav-link text-brand-purple"> CONTACT</a>
 						</li>
 					</ul>
 					<span class="navbar-text ml-auto">
 						<a role="button" data-toggle="modal" data-target="#loginModal" class="nav-link text-brand-purple">
-							<i class="fa fa-sign-in"></i>
+							<i class="fa fa-sign-in-alt"></i>
 							LOGIN
 						</a>
 					</span>
@@ -68,27 +54,15 @@
 			</div>
 		</nav>
 
-		<!-- JUMBOTRON -->
-		<header class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-sm-3 col-md-2">
-						<a href="index2.html"><img src="img/logo.png" alt="logo" class="img-fluid" /></a>
-					</div>
-					<div class="col">
-						<h1>NuCamp</h1>
-						<h2>a better way to camp</h2>
-					</div>
-				</div>
-			</div>
-		</header>
-
+		<!-- ------------- -->
+		<!--  LOGIN MODAL  -->
+		<!-- ------------- -->
 		<div class="modal fade" id="loginModal" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h3 class="modal-title">Login</h3>
-						<button class="close" type="button" data-dismiss="modal">&times;</button>
+						<button class="close" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
 					</div>
 					<div class="modal-body">
 						<div class="container-fluid">
@@ -120,6 +94,24 @@
 			</div>
 		</div>
 
+		<!-- ------------- -->
+		<!--   JUMBOTRON   -->
+		<!-- ------------- -->
+		<header class="jumbotron jumbotron-fluid half-jumbotron align-items-center d-flex">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row pt-5">
+					<div class="col-2 d-flex">
+						<a href="index.html" class="ml-auto"><img src="img/logo.png" alt="logo" class="img-fluid" /></a>
+					</div>
+					<div class="col d-flex align-items-center">
+						<h1 class="text-brand-blue">About Us</h1>
+						<!-- <h2 class="text-brand-blue">a better way to camp</h2> -->
+					</div>
+				</div>
+			</div>
+		</header>
+
 		<!-- -------------- -->
 		<!-- MAIN CONTAINER -->
 		<!-- -------------- -->
@@ -127,18 +119,17 @@
 			<!-- BREADCRUMBS -->
 			<div class="row">
 				<div class="col">
-					<ol class="breadcrumb">
+					<ol class="breadcrumb bg-transparent m-0">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 						<li class="breadcrumb-item active">About</li>
 					</ol>
-					<h2>About Us</h2>
-					<hr />
+					<hr class="m-0" />
 				</div>
 			</div>
 
 			<!-- OUR MISSION -->
-			<div class="row row-content">
-				<div class="col col-sm-6">
+			<div class="row row-content py-5">
+				<div class="col col-sm-9 mx-auto">
 					<h3>Our Mission</h3>
 					<p>
 						We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe
@@ -149,7 +140,7 @@
 			</div>
 
 			<!-- COMMUNITY PARTNERS TABS -->
-			<div class="row row-content">
+			<div class="row row-content py-5" id="commPartners">
 				<div class="col">
 					<h3>Community Partners</h3>
 
@@ -212,26 +203,27 @@
 		<!-- -------- -->
 		<!--  FOOTER  -->
 		<!-- -------- -->
-		<footer>
+		<footer class="bg-brand-purple d-flex align-items-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-4 col-sm-2 offset-1">
-						<h5>Links</h5>
+						<h3 class="text-white">Links</h3>
 						<ul class="list-unstyled">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aboutus.html">About</a></li>
-							<li><a href="#">Sites</a></li>
-							<li><a href="contactus.html">Contact</a></li>
+							<li><a class="text-brand-blue" href="#">Home</a></li>
+							<li><a class="text-brand-blue" href="aboutus.html">About</a></li>
+							<li><a class="text-brand-blue" href="#">Sites</a></li>
+							<li><a class="text-brand-blue" href="contactus.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-6 col-sm-5 text-center">
-						<h5>Social</h5>
-						<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-						<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-						<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+						<h3 class="text-white">Social</h3>
+						<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-instagram"></i></a>
+						<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-facebook"></i></a>
+						<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-twitter"></i></a>
+						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-2x mt-2 text-brand-blue fa-youtube"></i></a>
 					</div>
 					<div class="col-sm-4 text-center">
+						<h3 class="text-white">Reach Out</h3>
 						<a role="button" href="tel:2065551234" class="btn btn-link"><i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a><br />
 						<a role="button" href="mailto:campsites@nucamp.co" class="btn btn-link"><i class="fa fa-envelope-o fa-lg text-primary"></i> campsites@nucamp.co</a>
 					</div>
@@ -243,5 +235,6 @@
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/customJS.js"></script>
 	</body>
 </html>

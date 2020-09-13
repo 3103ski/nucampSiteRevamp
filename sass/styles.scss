@@ -1,0 +1,183 @@
+/* -------------- */
+/*	 Global Tags  */
+/* -------------- */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	color: #3046c5;
+}
+
+header h2 {
+	color: #cec8ff;
+}
+
+footer {
+	padding: 20px 0;
+	height: 300px;
+}
+
+/* ----------------- */
+/*  LOCAL VARIABLES  */
+/* ----------------- */
+
+// colors
+$brand-blue: #0096db;
+$brand-purple: #a83da3;
+$brand-grey: #302d2d;
+
+// sizing
+$jumbotron-height: 75vh;
+
+/* ------------------- */
+/* Bootstrap Overrides */
+/* ------------------- */
+
+// ****
+/* JUMBOTRON */
+
+.jumbotron {
+	padding: 30px;
+	position: relative;
+	background-image: url('/img/bg-tents.jpg');
+	background-size: cover;
+	background-position: center;
+	height: $jumbotron-height;
+	min-height: 500px;
+	color: white;
+	margin: 0;
+}
+
+.jumbotron .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(218, 218, 218, 0.496);
+	left: 0;
+	top: 0;
+}
+
+.half-jumbotron {
+	height: $jumbotron-height / 3;
+	min-height: 250px;
+}
+
+// ****
+/* NAVBAR */
+
+.nav-link {
+	/* color: purple; */
+	font-size: 1.15rem;
+	letter-spacing: 0.2rem;
+}
+
+.nav-item .active {
+	border-bottom: solid 2px $brand-blue;
+}
+
+.navbar-default {
+	transition: 500ms ease;
+	background: transparent;
+}
+.navbar-default.scrolled {
+	background: $brand-grey;
+}
+
+// ****
+/* Carousel */
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+	min-height: 380px;
+	height: $jumbotron-height / 1.5;
+}
+
+.carousel-item {
+	background-size: cover;
+	background-position: center;
+}
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-breadcrumb {
+	background-image: url('/img/bg-campsite.jpg');
+}
+
+.bg-react-lake {
+	background-image: url('/img/bg-lake.jpg');
+}
+
+.bg-chrome-river {
+	background-image: url('/img/bg-river.jpg');
+}
+
+// ****
+/* btn */
+
+.btn {
+	letter-spacing: 0.1rem;
+}
+
+/* ----------------- */
+/* 	Local Classes	 */
+/* ----------------- */
+
+// ROWS
+
+.row-content {
+	padding: 100px 0;
+	min-height: 200px;
+}
+
+.row-half-pad {
+	padding: 50px 0;
+}
+
+.border-primary {
+	border-color: $brand-grey !important;
+}
+
+// ICONS
+
+// Contact Page
+
+.contact-card a {
+	width: 100%;
+	.fa-phone,
+	.fa-envelope-open-text {
+		border: solid 2px $brand-blue;
+		border-radius: 50px;
+		padding: 10px;
+	}
+}
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+.text-brand-blue {
+	color: $brand-blue !important;
+}
+
+.bg-brand-blue {
+	background-color: $brand-blue !important;
+}
+
+.text-brand-purple {
+	color: $brand-purple !important;
+}
+
+.bg-brand-purple {
+	background-color: $brand-purple !important;
+}
