@@ -30,7 +30,7 @@
 			<div class="container">
 				<a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" height="40px" width="40px" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-					<span class="navbar-toggler-icon"></span>
+					<span class="fas fa-bars text-brand-blue"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="nucampNavbar">
 					<ul class="navbar-nav p-sm-2">
@@ -49,7 +49,7 @@
 					</ul>
 					<span class="navbar-text ml-auto">
 						<a role="button" data-toggle="modal" data-target="#loginModal" class="nav-link text-brand-purple">
-							<i class="fa fa-sign-in-alt"></i>
+							<i class="fa fa-sign-in-alt text-brand-blue"></i>
 							LOGIN
 						</a>
 					</span>
@@ -61,11 +61,11 @@
 		<!--  LOGIN MODAL  -->
 		<!-- ------------- -->
 		<div class="modal fade" id="loginModal" role="dialog">
-			<div class="modal-dialog" role="document">
+			<div class="modal-dialog mt-5" role="document">
 				<div class="modal-content">
-					<div class="modal-header">
+					<div class="modal-header align-items-center bg-brand-purple text-white">
 						<h3 class="modal-title">Login</h3>
-						<button class="close" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
+						<button class="close" type="button" data-dismiss="modal"><i class="fa fa-window-close text-white"></i></button>
 					</div>
 					<div class="modal-body">
 						<div class="container-fluid">
@@ -88,7 +88,7 @@
 								</div>
 								<div class="form-row">
 									<button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-									<button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+									<button type="submit" class="btn bg-brand-blue text-white btn-sm ml-1">Sign In</button>
 								</div>
 							</form>
 						</div>
@@ -151,19 +151,19 @@
 				</div>
 			</div>
 
-			<!-- Reviews Modal -->
+			<!-- REVIEWS MODAL -->
 			<div class="modal fade" id="reviewModal">
 				<div class="modal-dialog modal-xl">
 					<div class="modal-content">
-						<div class="modal-header text-white bg-brand-purple">
+						<div class="modal-header align-items-center text-white bg-brand-purple">
 							<h1 class="ml-4">Reviews</h1>
-							<button class="close text-white" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
+							<button class="close text-white" type="button" data-dismiss="modal"><i class="fa fa-window-close mr-4"></i></button>
 						</div>
 						<div class="modal-content border-0 p-4">
 							<!-- review placeholder 1 -->
 							<div class="row justify-content-center mb-3">
-								<div class="col-2 d-flex">
-									<img src="img/placeholder-user-1.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								<div class="col-4 col-lg-3 col-xl-2 mb-3 mb-lg-0 mx-auto mx-lg-0 d-flex">
+									<div class="reviewPic" style="background-image: url('/img/placeholder-user-1.jpg')"></div>
 								</div>
 								<div class="col-8">
 									<h2 class="mb-0">Such a good time!</h2>
@@ -183,8 +183,8 @@
 							</div>
 							<!-- review placeholder 2 -->
 							<div class="row justify-content-center mb-3">
-								<div class="col-2 d-flex">
-									<img src="img/placeholder-user-2.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								<div class="col-4 col-lg-3 col-xl-2 mb-3 mb-lg-0 mx-auto mx-lg-0 d-flex">
+									<div class="reviewPic" style="background-image: url('/img/placeholder-user-2.jpg')"></div>
 								</div>
 								<div class="col-8">
 									<h2 class="mb-0">Clean sites and helpful rangers :)</h2>
@@ -204,8 +204,8 @@
 							</div>
 							<!-- review placeholder 3 -->
 							<div class="row justify-content-center mb-3">
-								<div class="col-2 d-flex">
-									<img src="img/placeholder-user-3.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								<div class="col-4 col-lg-3 col-xl-2 mb-3 mb-lg-0 mx-auto mx-lg-0 d-flex">
+									<div class="reviewPic" style="background-image: url('/img/placeholder-user-3.jpg')"></div>
 								</div>
 								<div class="col-8">
 									<h2 class="mb-0">Better weather next time</h2>
@@ -223,6 +223,12 @@
 									</p>
 								</div>
 							</div>
+							<!-- More Reviews -->
+							<div class="row">
+								<div class="col d-flex">
+									<button class="btn bg-brand-purple text-white mx-auto">See More Reviews <i class="fa fa-arrow-circle-down text-white"></i></button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -236,7 +242,7 @@
 							<h1 class="text-sm-left text-brand-purple">Featured Campsites</h1>
 							<h3 class="text-brand-blue">React Lake Campground</h3>
 							<p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-							<a href="/aboutus.html#commPartners" class="btn btn-block bg-brand-blue text-white py-2 mt-4 mt-sm-4">LEARN MORE</a>
+							<a class="btn btn-block bg-brand-blue text-white py-2 mt-4 mt-sm-4" data-toggle="modal" data-target="#featuredSitesModal">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
@@ -244,6 +250,90 @@
 					<div class="media">
 						<div class="media-body align-self-center m-2">
 							<img src="img/react-lake.jpg" alt="React Lake" class="d-flex mr-3 img-fluid rounded" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- CAMPSITES MODAL -->
+			<div class="modal fade" id="featuredSitesModal">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header text-white bg-brand-purple">
+							<h1 class="ml-4">Reviews</h1>
+							<button class="close text-white" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
+						</div>
+						<div class="modal-content border-0 p-4">
+							<!-- site placeholder 1 -->
+							<div class="row justify-content-center mb-3">
+								<div class="col-10 mb-3 mb-md-0 mx-auto col-md-4 col-lg-3 mx-md-0 d-flex">
+									<img src="img/pic-site-1.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								</div>
+								<div class="col-8">
+									<h2 class="mb-0">Foggy Lake</h2>
+									<div class="d-flex pl-3 mt-1 mb-3 rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<p class="text-review-name pl-3 m-0">(142 Reviews)</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora quia, vel consectetur pariatur a illo nihil maiores consequatur, modi mollitia nobis eos voluptates. Quam,
+										rem pariatur. Totam, obcaecati quisquam.
+									</p>
+								</div>
+							</div>
+							<!-- site placeholder 2 -->
+							<div class="row justify-content-center mb-3">
+								<div class="col-10 mb-3 mb-md-0 mx-auto col-md-4 col-lg-3 mx-md-0 d-flex">
+									<img src="img/pic-site-2.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								</div>
+								<div class="col-8">
+									<h2 class="mb-0">Sunset Valley</h2>
+									<div class="d-flex pl-3 mt-1 mb-3 rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+										<p class="text-review-name pl-3 m-0">(86 Reviews)</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora quia, vel consectetur pariatur a illo nihil maiores consequatur, modi mollitia nobis eos voluptates. Quam,
+										rem pariatur. Totam, obcaecati quisquam.
+									</p>
+								</div>
+							</div>
+							<!-- site placeholder 3 -->
+							<div class="row justify-content-center mb-3">
+								<div class="col-10 mb-3 mb-md-0 mx-auto col-md-4 col-lg-3 mx-md-0 d-flex">
+									<img src="img/pic-site-3.jpg" class="img-thumbnail rounded align-self-center" alt="User Image" />
+								</div>
+								<div class="col-8">
+									<h2 class="mb-0">Home Away From Home</h2>
+									<div class="d-flex pl-3 mt-1 mb-3 rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+										<p class="text-review-name pl-3 m-0">(109 Reviews)</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora quia, vel consectetur pariatur a illo nihil maiores consequatur, modi mollitia nobis eos voluptates. Quam,
+										rem pariatur. Totam, obcaecati quisquam.
+									</p>
+								</div>
+							</div>
+
+							<!-- Link to sites page -->
+							<div class="row">
+								<div class="col d-flex">
+									<button class="btn bg-brand-purple text-white mx-auto">Browse All Campgrounds</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -294,7 +384,7 @@
 		<div class="container">
 			<!-- CONTENT-ROW 3 - Our Community Partners Row -->
 			<div class="row row-content align-items-center border-bottom border-primary">
-				<div class="col col-md-7 mx-auto">
+				<div class="col col-md-8 mx-auto">
 					<div class="media justify-content-center">
 						<img src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" class="d-flex mr-3 img-thumbnail" />
 						<div class="img-body align-self-center text-sm-right">

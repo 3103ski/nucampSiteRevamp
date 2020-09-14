@@ -15,15 +15,11 @@ h3 {
 }
 
 h2 {
-  color: #3046c5;
+  color: #0096db;
 }
 
 p {
   letter-spacing: 0.05rem;
-}
-
-header h2 {
-  color: #cec8ff;
 }
 
 footer {
@@ -43,7 +39,6 @@ footer {
   background-position: center;
   height: 75vh;
   min-height: 500px;
-  color: white;
   margin: 0;
 }
 
@@ -51,7 +46,7 @@ footer {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(218, 218, 218, 0.496);
+  background-color: #dadada7e;
   left: 0;
   top: 0;
 }
@@ -67,6 +62,11 @@ footer {
   letter-spacing: 0.2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+}
 .nav-item .active {
   border-bottom: solid 2px #0096db;
 }
@@ -76,6 +76,11 @@ footer {
   background: transparent;
 }
 
+@media screen and (max-width: 576px) {
+  .navbar {
+    background-color: #302d2d;
+  }
+}
 .navbar-default.scrolled {
   background: #302d2d;
 }
@@ -114,6 +119,14 @@ footer {
   letter-spacing: 0.1rem;
 }
 
+/* Cards */
+.card-img-top {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: solid 1px #0096db;
+}
+
 /* ----------------- */
 /* 	Local Classes	 */
 /* ----------------- */
@@ -139,6 +152,28 @@ footer {
   color: #f4d039;
 }
 
+.reviewPic {
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-top: 20px;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewPic {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .reviewPic {
+    height: 130px;
+    width: 130px;
+    border-radius: 75px;
+  }
+}
 .contact-card a {
   width: 100%;
 }
